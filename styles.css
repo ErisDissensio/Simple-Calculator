@@ -1,0 +1,15 @@
+.container-fluid {
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background-color: #5a618b;
+}
+.header {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+body {
+    background-color: rgb(216, 168, 168);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head><title>Simple Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <h1>Simple Calculator</h1>
+            <p>Author: Carlo B Corona</p>
+          </div> 
+    <label>Enter First Number</label>
+        <input type="text" id="number1" value="0"><br>
+    <label>Enter Second Number</label>
+        <input type="text" id="number2" value="0"><br>
+        <button type="button" onclick="add()">add</button>
+        <button type="button" onclick="multiply()">multiply</button>
+        <button type="button" onclick="subtraction()">subtract</button>
+        <button type="button" onclick="division()">divide</button>
+        <button type="button" onclick="reset()">Reset</button>
+        <p id="result"></p>
+<script>
+    function add(){
+        var a = document.getElementById("number1").value;
+        var b = document.getElementById("number2").value;
+        var c = parseInt(a) + parseInt(b);
+        document.getElementById("result").innerHTML="Sum of number is:" +c;
+    }
+    function multiply(){
+        var a = document.getElementById("number1").value;
+        var b = document.getElementById("number2").value;
+        var c = parseInt(a) * parseInt(b);
+        document.getElementById("result").innerHTML="The product of number is:" +c;
+    }
+    function division(){
+        var a = document.getElementById("number1").value;
+        var b = document.getElementById("number2").value;
+        var c = parseInt(a) / parseInt(b);
+        document.getElementById("result").innerHTML="The product of number is:" +c;
+    }
+    function subtraction(){
+        var a = document.getElementById("number1").value;
+        var b = document.getElementById("number2").value;
+        var c = parseInt(a) - parseInt(b);
+        document.getElementById("result").innerHTML="The product of number is:" +c;
+    }
+    function reset(){
+        document.getElementById("number1").value=0;
+        document.getElementById("number2").value=0;
+        document.getElementById("result").innerHTML="Sum of two number is:" +"0";
+    }
+</script>
+ </body>
+</html>
